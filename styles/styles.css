@@ -71,7 +71,7 @@ body {
   position: absolute;
   width: 6px;
   height: 6px;
-  background: #000;
+  background: #333;
   border-radius: 50%;
   transition: 0.6s;
 }
@@ -80,4 +80,18 @@ body {
 }
 .menu .navigation span:nth-child(3) {
   transform: translateY(12px);
+}
+.menu .navigation.active {
+  width: 200px;
+}
+.menu .navigation.active span {
+  width: 50px;
+  height: 50px;
+  transition: 0.6s;
+}
+.menu .navigation.active span:nth-child(1) {
+  transform: translateX(-60px);
+}
+.menu .navigation.active span:nth-child(3) {
+  transform: translateX(60px);
 }/*# sourceMappingURL=styles.css.map */
